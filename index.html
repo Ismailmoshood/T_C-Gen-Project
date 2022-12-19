@@ -4,13 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/css/style.css" media="screen and (min-width: 701px)" type="text/css" />
+    <link rel="stylesheet" media="screen and (max-width: 700px)" href="assets/css/mob-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/Frame 361.png"
     />
   </head>
   <body>
@@ -18,21 +25,23 @@
     <nav id="home">
       <a href="./index.html" class="logo"><strong>New</strong>T</a>
       <div>
-        <a href="./index.html">Home</a>
+        <a href="./index.html" class="remove">Home</a>
         <a href="./AboutUs.html">About Us</a>
-        <a href="contactUs.html">Contact Us</a>
-        <a href="#">Team</a>
+        <a href="./Contact.html">Contact Us</a>
+        <a href="#" class="remove">Team</a>
       </div>
       <div>
-        <button id="log-in">Log In</button>
-        <button id="sign-up">Sign Up</button>
+        <a href="./login.php" id="log-in">Log In</a>
+        <a href="./signup.php" id="sign-up">Sign Up</a>
       </div>
     </nav>
     <!-- Title-section -->
     <section class="title">
       <div class="top-tittle">
         <div class="topleft-tittle">
-          <h2 class="green-text">Terms and conditions</h2>
+          <h2 class="green-text">
+            Terms and conditions
+          </h2>
           <h2>Generator</h2>
           <p>
             Create a free terms and conditions agreement for your business with
@@ -40,42 +49,44 @@
             Business!
           </p>
           <div class="tittle-buttons">
-            <button id="tittle-button1">Generate Terms & condition</button>
-            <button id="tittle-button2">Read More</button>
+            <a href="./signup.php"><button id="tittle-button1">Generate Terms & condition</button></a>
+            <a href="#classification"><button id="tittle-button2">Read More</button></a>
           </div>
         </div>
         <div class="topright-tittle">
           <img
             class="tittle-img"
-            src="./Assets/tittle-img.png"
+            src="./assets/img/tittle-img.png"
             alt="tittle-img"
           />
         </div>
       </div>
       <div class="bottom-tittle">
         <div class="bottom-tittle-boxes">
-          <img src="./Assets/clarity_world-outline-badged.png" /> 7,000+
+          <img src="./assets/img/clarity_world-outline-badged.png" /> 7,000+
           <p>Global Download</p>
         </div>
         <div class="bottom-tittle-boxes">
-          <img src="./Assets/material-symbols_privacy-tip-outline.png" /> 9,000+
+          <img src="./assets/img/material-symbols_privacy-tip-outline.png" />
+          9,000+
           <p>Terms & conditions Generated</p>
         </div>
         <div class="bottom-tittle-boxes">
-          <img src="./Assets/fluent_people-community-16-regular.png" /> 7,000+
+          <img src="./assets/img/fluent_people-community-16-regular.png" />
+          7,000+
           <p>Happy Clients</p>
         </div>
         <div class="bottom-tittle-boxes">
-          <img src="./Assets/la_award.png" /> 250+
+          <img src="./assets/img/la_award.png" /> 250+
           <p>Awards Received</p>
         </div>
       </div>
     </section>
     <!-- classification section -->
-    <section class="classification">
+    <section id="classification">
       <h2>Best T&C Generator</h2>
       <div id="blogs" class="subclasses">
-        <div><img src="./Assets/fluent-mdl2_website.png" /></div>
+        <div><img src="./assets/img/fluent-mdl2_website.png" /></div>
         <div>
           <h4>Terms & Conditions for websites and blogs</h4>
           <p>
@@ -90,7 +101,7 @@
         </div>
       </div>
       <div id="mobile" class="subclasses">
-        <div><img src="./Assets/phone.png" /></div>
+        <div><img src="./assets/img/phone.png" /></div>
         <div>
           <h4>Terms & Conditions for Mobile Apps</h4>
           <p>
@@ -101,7 +112,7 @@
         </div>
       </div>
       <div id="e-commerce" class="subclasses">
-        <div><img src="./Assets/ps_cart-supermarket.png" /></div>
+        <div><img src="./assets/img/ps_cart-supermarket.png" /></div>
         <div>
           <h4>Terms & Conditions for E-Commerce sites and Online stores</h4>
           <p>
@@ -118,7 +129,7 @@
         </div>
       </div>
       <div id="business" class="subclasses">
-        <div><img src="./Assets/eos-software.png" /></div>
+        <div><img src="./assets/img/eos-software.png" /></div>
         <div>
           <h4>Terms & Conditions for Saas Businesses</h4>
           <p>
@@ -133,7 +144,7 @@
           </p>
         </div>
       </div>
-      <button id="tittle-button1">Generate Terms & condition</button>
+      <a href="./signup.php"><button id="tittle-button1">Generate Terms & condition</button></a>
     </section>
     <!-- Steps-Section -->
     <section class="steps">
@@ -146,8 +157,12 @@
         business? open the generator and follow these steps
       </p>
       <div class="bottom-steps">
-        <img id="rectangle" src="./Assets/Rectangle 30.png" alt="Image here" />
-        <img src="./Assets/Group 1675.png" id="play-logo" />
+        <img
+          id="rectangle"
+          src="./assets/img/Rectangle 30.png"
+          alt="Image here"
+        />
+        <img src="./assets/img/Group 1675.png" id="play-logo" />
         <ol>
           <li>
             Fill in the necessary information about your website, app or
@@ -171,9 +186,9 @@
     <section class="choose">
       <h3>Why Choose Us</h3>
       <div class="choose-bottom">
-        <div style="width: 50%">
+        <div id="choose-bottom-left">
           <div class="choose-lists">
-            <div><img src="./Assets/wechat-pay-line.png" /></div>
+            <div><img src="./assets/img/wechat-pay-line.png" /></div>
             <div>
               <h4>Free T&C Generator</h4>
               <p>
@@ -182,7 +197,7 @@
             </div>
           </div>
           <div class="choose-lists">
-            <div><img src="./Assets/check-correct.png" /></div>
+            <div><img src="./assets/img/check-correct.png" /></div>
             <div>
               <h4>Perfect For Your Business</h4>
               <p>
@@ -192,7 +207,7 @@
             </div>
           </div>
           <div class="choose-lists">
-            <div><img src="./Assets/customizable.png" /></div>
+            <div><img src="./assets/img/customizable.png" /></div>
             <div>
               <h4>Easily Customizable</h4>
               <p>
@@ -203,7 +218,7 @@
             </div>
           </div>
           <div class="choose-lists">
-            <div><img src="./Assets/web-hosting.png" /></div>
+            <div><img src="./assets/img/web-hosting.png" /></div>
             <div>
               <h4>Free Web Hosting</h4>
               <p>
@@ -214,7 +229,7 @@
             </div>
           </div>
           <div class="choose-lists">
-            <div><img src="./Assets/save-alt.png" /></div>
+            <div><img src="./assets/img/save-alt.png" /></div>
             <div>
               <h4>Save and Download anytime</h4>
               <p>
@@ -225,7 +240,7 @@
           </div>
         </div>
         <div>
-          <img src="./Assets/Why Choose Us image.png" id="choose-image" />
+          <img src="./assets/img/Why Choose Us image.png" id="choose-image" />
         </div>
       </div>
     </section>
@@ -237,7 +252,7 @@
       </div>
       <div class="carousel">
         <div class="slideshow-container">
-          <div><img src="./Assets/Ellipse 10.png" /></div>
+          <div><img src="./assets/img/Ellipse 10.png" /></div>
           <div id="carousel-text">
             <p class="coloured-text">
               You guys are awesome. you have been the most helpful in helping me
@@ -327,7 +342,7 @@
             easily as possible without sacrificing compliance. Use our T & C to
             maintain more control of your business.
           </p>
-          <img style="margin-top: 20px" src="./Assets/Social Icons.png" />
+          <img style="margin-top: 20px" src="./assets/img/Social Icons.png" />
         </div>
         <div style="width: 140px">
           <h3>Company</h3>
